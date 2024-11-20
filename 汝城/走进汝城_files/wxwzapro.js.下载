@@ -1,0 +1,150 @@
+function letJs (url, callback) {
+  var script = parent.document.createElement('script');
+  script.type = 'text/javascript';
+  script.async = 'async';
+  script.charset = 'utf-8';
+  script.src = url;
+  document.body.appendChild(script);
+  if (script.readyState) {
+    script.onreadystatechange = function () {
+      if (script.readyState == 'complete' || script.readyState == 'loaded') {
+        script.onreadystatechange = null;
+        callback();
+      }
+    }
+  } else {
+    script.onload = function () {
+      callback();
+    }
+  }
+}
+
+function lsParObj () {
+  var js = parent.document.getElementsByTagName("script");
+  var obj = new Object();
+  for (var i = 0; i < js.length; i++) {
+    if (js[i].src.indexOf("wxwzapro.js") >= 0) {
+      var arraytemp = js[i].src.split('?');
+      if (arraytemp.length > 1) {
+        obj.paramStr = '?' + arraytemp[1];
+        var params = arraytemp[1].split('&');
+        for (var j = 0; j < params.length; j++) {
+          var parm = params[j].split("=");
+          obj[parm[0]] = parm[1];
+        }
+      }
+    }
+  }
+  return obj;
+}
+function addWinLoad (func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function () {
+      oldonload();
+      func();
+    }
+  }
+}
+
+function hasScript (src) {
+  var result = false;
+  var js = parent.document.getElementsByTagName("script");
+  for (var i = 0; i < js.length; i++) {
+    if (js[i].src.indexOf(src) >= 0) {
+      result = true;
+      break;
+    }
+  }
+  return result
+}
+
+function addWxwza () {
+  if (hasScript('wxwzapro-p.js')) {
+    if (wxwza) {
+      wxwza.open();
+    }
+  } else {
+    var div = document.createElement("div");
+    div.innerText = "正在启动无障碍工具,请稍后...";
+    div.id = 'wxwzaloading';
+    div.style = 'position:absolute;z-index:999999;top:0px;left:0px;right:0px;padding:10px;font-size:16px;text-align:center;background:#303133;color:#fff;opacity:.9';
+    document.body.appendChild(div);
+    var js = 'https://tts.wxzwb.com/aria/wxwzapro-p.js';
+    if(location.href.indexOf("127.0.0.1") > 0 || location.href.indexOf("localhost") > 0){
+      js = './js/wxwzapro-p.js';
+    }
+    letJs( js + lsParObj().paramStr, function () {
+      setTimeout(() => {
+        if (wxwza) {
+          wxwza.open();
+        }
+        document.getElementById('wxwzaloading').remove();
+      }, 1000);
+    });
+  }
+}
+addWinLoad(function () {
+  var obj = lsParObj();
+  if (obj.control) {
+
+    var btns = [];
+    var all = document.querySelectorAll("[id='" + obj.control + "']");
+    if (all) {
+      for (var o of all) {
+        btns.push(o);
+      }
+    }
+    for (var i = 0; i < window.frames.length; i++) {
+      try {
+        var doc = window.frames[i].document;
+        var ns = doc.querySelectorAll("[id='" + obj.control + "']");
+        if (ns) {
+          for (var s of ns) {
+            btns.push(s);
+          }
+        }
+      } catch (err) {
+        console.log(err)
+      } 
+      //btns = [...btns,...ns];
+    }
+
+
+    if (btns) {
+      for (var btn of btns) {
+        btn.addEventListener("click", () => {
+          addWxwza();
+        })
+      }
+    }
+    /*
+    var buttonObj = document.querySelector('#' + obj.control);
+    if (buttonObj) {
+      buttonObj.addEventListener("click", () => {
+        addWxwza();
+      });
+    }
+    */
+  }
+  window.wxwza = {
+    open: function () {
+      addWxwza();
+    },
+    close () {
+      setTimeout(function () {
+        window.wxwza.close();
+      }, 1000);
+    },
+    toggle () {
+
+    },
+    openReadScreen () {
+      setTimeout(function () {
+        window.wxwza.openReadScreen();
+      }, 1000);
+    }
+  }
+});
