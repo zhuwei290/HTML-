@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖南汝城</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 头部 -->
+<header>
+    <div class="logo">
+        <h1>湖南汝城</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="http://www.rc.gov.cn/">首页</a></li>
+            <li><a href="#">汝城简介</a>
+                <ul>
+                    <li><a href="http://www.rc.gov.cn/zjrc/xzqh/content_1680225.html">地理位置</a></li>
+                    <li><a href="http://www.rc.gov.cn/zjrc/lsyg/content_1646300.html">文化历史</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">景点介绍</a>
+                <ul>
+                    <li><a href="http://www.rc.gov.cn/rcly/ysws/yzrc/default.htm">自然风光</a></li>
+                    <li><a href="http://www.rc.gov.cn/rcly/ysws/ydrc/default.htm">人文特色</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.rc.gov.cn/zmhd/default.htm">联系我们</a></li>
+        </ul>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="请输入关键词">
+        <button>搜索</button>
+    </div>
+</header>
+<div id="menu0">
+    <ul id="menu">
+        <li class="active" data-id="1" onmouseover="showtab2(this)" onmouseout="resettab(this)">
+            <a href="http://127.0.0.1:5500/project/index.html#">县情首页</a>
+        </li>
+        <li data-id="2" onmouseover="showtab2(this)" onmouseout="resettab(this)">
+            <a class="nav2" href="http://127.0.0.1:5500/project/index.html#page2">汝城概况</a>
+        </li>
+        <li data-id="3" onmouseover="showtab2(this)" onmouseout="resettab(this)">
+            <a class="nav3" href="http://127.0.0.1:5500/project/index.html#page3">文明文化</a>
+        </li>
+        <li data-id="4" onmouseover="showtab2(this)" onmouseout="resettab(this)">
+            <a class="nav4" href="http://127.0.0.1:5500/project/index.html#page4">旅游服务</a>
+        </li>
+        <li data-id="5" onmouseover="showtab2(this)" onmouseout="resettab(this)">
+            <a class="nav5" href="http://127.0.0.1:5500/project/index.html#page5">投资汝城</a>
+        </li>
+        <li data-id="6" onmouseover="showtab2(this)" onmouseout="resettab(this)">
+            <a class="nav6" href="http://127.0.0.1:5500/project/index.html#page6">图画汝城</a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+<!-- 轮播图 -->
+<div id="carousel" class="carousel">
+    <div class="carousel-item active">
+        <img src="images/1.png" alt="汝城景点1">
+    </div>
+    <div class="carousel-item">
+        <img src="images/2.jpg" alt="汝城景点2">
+    </div>
+    <div class="carousel-item">
+        <img src="images/3.jpg" alt="汝城景点3">
+    </div>
+    <span class="arrow prev" onclick="changeImage(-1)">&#10094;</span>
+    <span class="arrow next" onclick="changeImage(1)">&#10095;</span>
+</div>
+
+
+
+<div class="xq-bg xq-bg2" id="page2" onmouseover="showtab2(2)">
+    <div class="box">
+        <div class="blank40"></div>
+        <div class="gk">
+            <p>
+                汝城县位于湖南省东南部，地处湘、粤、赣三省交界，素有“鸡鸣三省，水注三江”之称，是湖南通粤达海的“南大门”。全县土地面积2400.7平方公里，辖14个乡镇217个村，人口42.28万，其中少数民族乡镇3个，少数民族人口7.4万，是国家扶贫开发工作重点县、罗霄山片区连片扶贫开发县。
+            </p>
+            <b>
+                <a href="http://www.rc.gov.cn/zjrc/rcgl/content_3035493.html" style="color: #0567b4;" target="_blank" title="了解更多">了解更多</a>
+            </b>
+        </div>
+        <div class="xzqh" style="left: 50%; margin-left: -200px;">
+            <div class="map">
+                <img border="0" height="403" src="images/map.png" usemap="#Map" width="472"/>
+                <map name="Map">
+                    <area coords="293,48,295,49,322,90,260,187,229,163,206,143,243,133,282,102" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680250.html" shape="poly" target="_blank"/>
+                    <area coords="40,178,11,223,28,253,33,308,43,304,63,311,68,331,98,336,109,302,124,273,156,271,158,246,164,214,136,224,112,217,102,202,106,179,94,168,78,191" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680074.html" shape="poly" target="_blank"/>
+                    <area coords="200,153,218,156,229,180,234,186,248,199,224,208,231,234,220,245,192,258,172,243,169,216,162,205,177,191,166,182,185,151" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680075.html" shape="poly" target="_blank"/>
+                    <area coords="172,308,183,300,180,292,191,258,171,246,160,268,127,278,118,294,118,308,100,342,115,364,126,357,138,356,160,355,163,366,172,357,176,345,186,332,191,321" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680392.html" shape="poly" target="_blank"/>
+                    <area coords="220,249,192,261,185,298,179,308,190,314,209,304,229,290,250,284,263,275,258,269,258,256,235,262" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680323.html" shape="poly" target="_blank"/>
+                    <area coords="200,370,178,358,198,327,200,314,241,292,254,298,220,341,217,354,219,363,211,372" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680120.html" shape="poly" target="_blank"/>
+                    <area coords="276,278,259,306,230,362,202,390,233,382,268,365,294,349,302,335,328,339,362,283,323,275" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680097.html" shape="poly" target="_blank"/>
+                    <area coords="322,347,364,295,376,288,380,296,392,307,378,352,361,355,345,381,328,377,313,380,308,361,301,348,310,343" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680096.html" shape="poly" target="_blank"/>
+                    <area coords="379,253,370,241,358,266,378,283,407,300,425,303,422,289,426,263,436,241,450,241,449,231,455,217,438,219,418,213,408,220,393,235" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680078.html" shape="poly" target="_blank"/>
+                    <area coords="404,176,406,150,402,133,407,127,422,161,428,176,432,186,446,191,446,204,440,215,422,209,400,218,385,227,382,242,370,237,357,249,352,264,340,268,345,250,334,236,318,236,332,220,338,223,358,210,350,198,375,190" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680077.html" shape="poly" target="_blank"/>
+                    <area coords="241,13,254,3,255,16,263,28,284,32,290,36,304,35,292,43,292,43,279,57,285,61,278,99,243,126,228,127,230,113,224,109,235,103,238,89,233,79,241,76,248,67,243,58,238,43,226,40,201,33,220,19,225,11" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680249.html" shape="poly" target="_blank"/>
+                    <area coords="346,90,313,119,322,133,343,164,374,163,382,181,395,175,390,160,400,149,396,133,402,121,399,102,384,87,390,77,374,81,351,76" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680076.html" shape="poly" target="_blank"/>
+                    <area coords="287,180,295,171,292,154,310,130,342,172,370,169,370,176,378,183,346,192,346,201,351,209,334,214,309,234,282,227,276,203,259,194,271,178" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680165.html" shape="poly" target="_blank"/>
+                    <area coords="329,269,301,271,284,270,275,275,264,267,262,252,236,254,278,232,306,238,329,241,339,254" href="http://www.rc.gov.cn/zjrc/xzgl/content_1680324.html" shape="poly" target="_blank"/>
+                    <area coords="228,208,274,205,276,230,236,246" href="http://www.rc.gov.cn/" shape="poly"/>
+                </map>
+            </div>
+            <p>
+                汝城县位于湖南省郴州市东南部，地处湘、粤、赣三省交界处，东经113°16′～113°59′，北纬25°19′～25°52′之间。东邻江西省崇义县，南界广东省仁化县、乐昌市，西接宜章县，北连资兴市、桂东县。东西长72公里，南北宽63公里，总面积为2400.71平方公里。县境内多丘陵和山地，概称“八山半水一分田，半分道路通庄园”。辖14个乡镇217个村，人口42.28万，其中少数民族乡镇3个...
+                <span class="cDred">
+                    <a href="http://www.rc.gov.cn/zjrc/xzqh/content_1680225.html" target="_blank" title="[ 详情 ]">[ 详情 ]</a>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="xq-bg xq-bg3" id="page3" onmouseover="showtab2(3)">
+    <div class="blank100"></div>
+    <div class="rk box">
+        <ul>
+            <li><a href="http://www.rc.gov.cn/zjrc/lsyg/content_1646300.html"><img src="images/xq_01.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rcwh/content_1636040.html"><img src="images/xq_02.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rcjy/content_1634853.html"><img src="images/xq_03.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rcjj/content_1636415.html"><img src="images/xq_04.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rcrk/content_1635767.html"><img src="images/xq_05.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rcjt/content_1634707.html"><img src="images/xq_06.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rckj/content_1634854.html"><img src="images/xq_07.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rcws/content_1634855.html"><img src="images/xq_08.png"/></a></li>
+            <li><a href="http://www.rc.gov.cn/zjrc/rcmz/content_1693674.html"><img src="images/xq_09.png"/></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="xq-bg xq-bg4" id="page4" onmouseover="showtab2(4)">
+    <div class="box">
+        <div class="blank40"></div>
+        <div class="ly-titel"><img src="images/ly.png"/></div>
+        <div class="blank40"></div>
+        <div class="ly-content">
+            <li class="pt1"><a href="http://www.rc.gov.cn/rcly/ysws/szrc/default.htm"><img src="images/ly_01.png"/></a></li>
+            <li class="pt4"><a href="http://www.rc.gov.cn/rcly/ysws/gzrc/default.htm"><img src="images/ly_05.png"/></a></li>
+            <li class="pt2"><a href="http://www.rc.gov.cn/rcly/ysws/yzrc/default.htm"><img src="images/ly_04.png"/></a></li>
+            <li class="pt5"><a href="http://www.rc.gov.cn/rcly/ysws/ydrc/default.htm"><img src="images/ly_03.png"/></a></li>
+            <li class="pt3"><a href="http://www.rc.gov.cn/rcly/ysws/zzrc/default.htm"><img src="images/ly_02.png"/></a></li>
+        </div>
+    </div>
+</div>
+
+
+<div class="xq-bg xq-bg5" id="page5" onmouseover="showtab2(5)">
+    <div class="box">
+        <div class="tz">
+            <div class="tz-titel"><img src="images/tz.png"/></div>
+            <div class="tz-titel-nav">
+                <li class="pt1"><div class="boxx"><img src="images/tz_01.png"/><div class="boxx-content">
+                    <h3 class="title"><a href="http://www.rc.gov.cn/tzrc/tzhj/default.htm">了解详情</a></h3>
+                </div></div></li>
+                <li class="pt3"><div class="boxx"><img src="images/tz_03.png"/><div class="boxx-content">
+                    <h3 class="title"><a href="http://www.rc.gov.cn/tzrc/gyyq/default.htm">了解详情</a></h3>
+                </div></div></li>
+            </div>
+            <div class="tz-list tz-list1">
+                <h2><a href="http://www.rc.gov.cn/tzrc/zsxm/default.htm" target="_blank" title="招商项目">招商项目</a></h2>
+                <li><span>2024-11-07</span><a href="http://www.rc.gov.cn/tzrc/zsxm/content_3814796.html" target="_blank" title="汝城县现代石材产业园建设工程项目（一期）中标结果公告">汝城县现代石材产业园建设工程项目（一...</a></li>
+                <li><span>2024-11-06</span><a href="http://www.rc.gov.cn/tzrc/zsxm/content_3811169.html" target="_blank" title="汝城县盛翔新能源开发有限公司分布式光伏发电项目（EPC）中标结果公告">汝城县盛翔新能源开发有限公司分布式光...</a></li>
+                <li><span>2024-10-18</span><a href="http://www.rc.gov.cn/tzrc/zsxm/content_3814795.html" target="_blank" title="汝城县现代石材产业园建设工程项目（一期）招标公告">汝城县现代石材产业园建设工程项目（一...</a></li>
+                <li><span>2024-10-14</span><a href="http://www.rc.gov.cn/tzrc/zsxm/content_3811162.html" target="_blank" title="汝城县盛翔新能源开发有限公司分布式光伏发电项目（EPC）招标公告">汝城县盛翔新能源开发有限公司分布式光...</a></li>
+                <li><span>2024-06-27</span><a href="http://www.rc.gov.cn/tzrc/zsxm/content_3771460.html" target="_blank" title="汝城县东部片区地下管线设施建设项目实施主体竞争性磋商成交公告">汝城县东部片区地下管线设施建设项目实...</a></li>
+                <h3><a href="http://www.rc.gov.cn/tzrc/zsxm/default.htm"><img height="27" src="images/more1.png" width="294"/></a></h3>
+            </div>
+            <div class="tz-list tz-list2">
+                <h2><a href="http://www.rc.gov.cn/tzrc/qyzc/default.htm" target="_blank" title="企业之窗">企业之窗</a></h2>
+                <li><span>2024-09-14</span><a href="http://www.rc.gov.cn/tzrc/qyzc/content_3809622.html" target="_blank" title="汝城经开区：“送解优”护航企业扬帆“出海”">汝城经开区：“送解优”护航企业扬帆“...</a></li>
+                <li><span>2024-04-01</span><a href="http://www.rc.gov.cn/tzrc/qyzc/content_3742549.html" target="_blank" title="汝城经济开发区：让“信用”闪耀“园区”">汝城经济开发区：让“信用”闪耀“园区...</a></li>
+                <li><span>2023-11-21</span><a href="http://www.rc.gov.cn/tzrc/qyzc/content_3694986.html" target="_blank" title="汝城举办园区运动会：赛场活力凝聚发展动力">汝城举办园区运动会：赛场活力凝聚发展...</a></li>
+                <li><span>2023-09-21</span><a href="http://www.rc.gov.cn/tzrc/qyzc/content_3694987.html" target="_blank" title="税费政策宣传进园区 税收惠企政策促发展">税费政策宣传进园区 税收惠企政策促发...</a></li>
+                <li><span>2023-03-14</span><a href="http://www.rc.gov.cn/tzrc/qyzc/content_3567691.html" target="_blank" title="汝城经济开发区：聚力“四敢”，为园区高质量发展蓄势赋能">汝城经济开发区：聚力“四敢”，为园区...</a></li>
+                <h3><a href="http://www.rc.gov.cn/tzrc/qyzc/default.htm"><img height="27" src="images/more2.png" width="294"/></a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="xq-bg xq-bg6" id="page6" onmouseover="showtab2(6)">
+    <div class="box">
+        <div class="c3tu">
+            <div class="c3tu1" style="cursor: pointer;">
+                <video controls>
+                    <source src="video/rucheng.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+            <div class="c3tu2">
+                <a href="http://www.rc.gov.cn/photorc/fjms/content_1700513.html" target="_blank" title="伟人故里，半条被子，温暖中国"><img alt="伟人故里，半条被子，温暖中国" border="0" height="167" src="images/20171114093859239001.jpg" width="395"/></a>
+            </div>
+        </div>
+        <div class="c3tua">
+            <div class="c3tu2">
+                <a href="http://www.rc.gov.cn/photorc/fjms/content_1695849.html" target="_blank" title="汝城县德寿山森林公园"><img alt="汝城县德寿山森林公园" border="0" height="167" src="images/20170628170059751.jpg" width="395"/></a>
+            </div>
+            <div class="c3tu2">
+                <a href="http://www.rc.gov.cn/photorc/fjms/content_1684138.html" target="_blank" title="汜水山"><img alt="汜水山" border="0" height="167" src="images/20161117161441705.jpg" width="395"/></a>
+            </div>
+            <div class="c3tu3">
+                <a href="http://www.rc.gov.cn/photorc/fjms/content_1674174.html" target="_blank" title="田园"><img alt="田园" border="0" height="167" src="images/20150925034331104.jpg" width="198"/></a>
+            </div>
+            <div class="c3tu4">
+                <a href="http://www.rc.gov.cn/photorc/fjms/content_1674172.html" target="_blank" title="汝城水韵"><img alt="汝城水韵" border="0" height="167" src="images/20150925032949606.jpg" width="592"/></a>
+            </div>
+            <div class="c3tu2">
+                <a href="http://www.rc.gov.cn/photorc/fjms/content_1634705.html" target="_blank" title="一江春水"><img alt="一江春水" border="0" height="167" src="images/20150714114925394.jpg" width="395"/></a>
+            </div>
+            <div class="c3tu2">
+                <a href="http://www.rc.gov.cn/photorc/fjms/content_1672053.html" target="_blank" title="泰来公园 樱花"><img alt="泰来公园 樱花" border="0" height="167" src="images/20150701161941537.jpg" width="395"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 蓝条 -->
+<div class="blue-bar"></div>
+
+<!-- 底部信息 -->
+<footer>
+    <p>© 2024 湖南汝城官网. All rights reserved.</p>
+    <p>联系电话：0735-8268000 | 邮箱：rczfw@126.com</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

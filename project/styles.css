@@ -1,0 +1,805 @@
+/* 统一页面字体和背景 */
+body {
+    font-family: 'Arial', sans-serif; /* 设置页面字体为 Arial，后备字体为 sans-serif */
+    margin: 0; /* 去除页面默认的外边距 */
+    padding: 0; /* 去除页面默认的内边距 */
+    background-color: #f4f4f4; /* 设置页面背景颜色为浅灰色 */
+}
+
+/* 头部样式 */
+header {
+    background-color: #333; /* 设置头部背景颜色为深灰色 */
+    color: white; /* 设置头部文字颜色为白色 */
+    padding: 20px; /* 设置头部内边距为 20 像素 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 子元素在主轴（水平）方向上均匀分布，左右两端对齐 */
+    align-items: center; /* 子元素在交叉轴（垂直）方向上居中对齐 */
+}
+
+header .logo h1 {
+    margin: 0; /* 去除 h1 元素的默认外边距 */
+    font-size: 24px; /* 设置 h1 元素的字体大小为 24 像素 */
+    font-weight: bold; /* 设置 h1 元素的字体加粗 */
+}
+
+header nav {
+    flex-grow: 1; /* 使导航栏在 Flexbox 布局中可以扩展以填充剩余空间 */
+    margin-left: 20px; /* 设置导航栏左侧外边距为 20 像素 */
+}
+
+header nav ul {
+    list-style: none; /* 去除列表项的默认样式（无项目符号） */
+    margin: 0; /* 去除 ul 元素的默认外边距 */
+    padding: 0; /* 去除 ul 元素的默认内边距 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-around; /* 子元素在主轴（水平）方向上均匀分布，间距相等 */
+}
+
+header nav ul li {
+    position: relative; /* 设置 li 元素的定位方式为相对定位 */
+}
+
+header nav ul li a {
+    color: white; /* 设置链接文本颜色为白色 */
+    text-decoration: none; /* 去除链接的下划线 */
+    padding: 10px; /* 设置链接的内边距为 10 像素 */
+    font-size: 16px; /* 设置链接的字体大小为 16 像素 */
+    display: block; /* 将链接设置为块级元素 */
+}
+
+/* 鼠标悬停时一级菜单字体变为蓝色 */
+header nav ul li:hover > a {
+    color: #0066cc;
+}
+
+/* 二级菜单样式 */
+header nav ul li ul {
+    position: absolute; /* 绝对定位，使二级菜单相对于最近的已定位祖先元素定位 */
+    top: 100%; /* 将二级菜单放置在父元素的正下方 */
+    left: 60%; /* 将二级菜单的左边缘放置在父元素的 60% 位置 */
+    transform: translateX(-50%); /* 将菜单水平居中 */
+    background-color: #0066cc; /* 设置二级菜单的背景颜色为蓝色 */
+    display: none; /* 默认隐藏二级菜单 */
+    min-width: 100px; /* 设置二级菜单的最小宽度为 100 像素 */
+    padding: 0; /* 去除二级菜单的内边距 */
+    z-index: 1; /* 设置二级菜单的堆叠顺序 */
+}
+
+header nav ul li:hover ul {
+    display: block; /* 显示二级菜单 */
+}
+
+
+header nav ul li ul li a {
+    color: white; /* 设置二级菜单文字颜色为白色 */
+    padding: 10px; /* 设置二级菜单链接的内边距为 10 像素 */
+    font-size: 14px; /* 设置二级菜单链接的字体大小为 14 像素 */
+    display: block; /* 将二级菜单链接设置为块级元素 */
+}
+
+/* 二级菜单项悬停效果 */
+header nav ul li ul li:hover a {
+    background-color: #005bb5;
+}
+
+/* 搜索框样式 */
+header .search-bar {
+    display: flex; /* 使用 Flexbox 布局 */
+    align-items: center; /* 垂直方向上居中对齐子元素 */
+}
+
+header .search-bar input {
+    padding: 8px; /* 设置输入框的内边距为 8 像素 */
+    margin-right: 10px; /* 设置输入框右侧的外边距为 10 像素 */
+    border: none; /* 去除输入框的边框 */
+    border-radius: 5px; /* 设置输入框的圆角半径为 5 像素 */
+    width: 200px; /* 设置输入框的宽度为 200 像素 */
+}
+
+header .search-bar button {
+    padding: 8px 15px; /* 设置按钮的内边距，上下为 8 像素，左右为 15 像素 */
+    border: none; /* 去除按钮的边框 */
+    border-radius: 5px; /* 设置按钮的圆角半径为 5 像素 */
+    background-color: #ff6600; /* 设置按钮的背景颜色为橙色 */
+    color: white; /* 设置按钮文字颜色为白色 */
+    cursor: pointer; /* 鼠标悬停在按钮上时显示为指针 */
+}
+
+/* 轮播图样式 */
+.carousel {
+    position: relative; /* 设置轮播图容器的定位方式为相对定位 */
+    max-width: 100%; /* 设置轮播图容器的最大宽度为 100% */
+    height: 100vh; /* 设置轮播图容器的高度为视口高度的 100% */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+}
+
+.carousel-item {
+    display: none; /* 默认隐藏轮播图项 */
+    width: 100%; /* 设置轮播图项的宽度为 100% */
+    height: 100%; /* 设置轮播图项的高度为 100% */
+}
+
+.carousel-item.active {
+    display: block; /* 显示当前活动的轮播图项 */
+}
+
+.carousel img {
+    width: 100%; /* 设置轮播图中图片的宽度为 100% */
+    height: 100%; /* 设置轮播图中图片的高度为 100% */
+    object-fit: cover; /* 保持图片的宽高比，裁剪图片以填充容器 */
+}
+
+.carousel .arrow {
+    position: absolute; /* 绝对定位，使箭头相对于最近的已定位祖先元素定位 */
+    top: 50%; /* 将箭头垂直居中 */
+    transform: translateY(-50%); /* 通过平移将箭头垂直居中 */
+    font-size: 30px; /* 设置箭头的字体大小为 30 像素 */
+    color: white; /* 设置箭头的颜色为白色 */
+    background-color: rgba(0, 0, 0, 0.5); /* 设置箭头的背景颜色为半透明的黑色 */
+    padding: 10px; /* 设置箭头的内边距为 10 像素 */
+    cursor: pointer; /* 鼠标悬停在箭头上时显示为指针 */
+    z-index: 2; /* 设置箭头的堆叠顺序，使其位于其他元素之上 */
+}
+
+.carousel .prev {
+    left: 10px; /* 将前一个箭头定位到距离容器左边缘 10 像素的位置 */
+}
+
+.carousel .next {
+    right: 10px; /* 将下一个箭头定位到距离容器右边缘 10 像素的位置 */
+}
+
+#menu0 {
+    position: fixed; /* 固定定位，使元素相对于浏览器窗口固定 */
+    left: 0; /* 将元素左侧与窗口左侧对齐 */
+    top: 40%; /* 将元素顶部距离窗口顶部 40% */
+    width: 165px; /* 设置元素的宽度为 165 像素 */
+    margin: -216px 0 0; /* 设置元素的外边距，上边距为 -216 像素，右边距和下边距为 0 */
+    padding: 0; /* 去除元素的内边距 */
+    list-style-type: none; /* 去除列表项的默认样式（无项目符号） */
+    z-index: 700; /* 设置元素的堆叠顺序，使其位于其他元素之上 */
+}
+
+#menu li {
+    margin-top: 5px; /* 设置列表项的顶部外边距为 5 像素 */
+    font: 16px "Microsoft Yahei"; /* 设置列表项的字体为 16 像素的 "Microsoft Yahei" 字体 */
+}
+
+#menu a {
+    display: block; /* 将链接设置为块级元素 */
+    color: #0074EA; /* 设置链接文本颜色为蓝色 */
+    text-align: center; /* 将链接文本居中对齐 */
+    text-indent: -9999px; /* 将链接文本移出可视区域，隐藏文字 */
+    text-decoration: none; /* 去除链接的下划线 */
+    height: 56px; /* 设置链接的高度为 56 像素 */
+    width: 56px; /* 设置链接的宽度为 56 像素 */
+    background: url(images/menu.png) left top no-repeat; /* 设置链接的背景图片，并确保路径正确 */
+}
+
+#menu a.nav2 {
+    background-position: left -112px; /* 设置 nav2 链接的背景图片位置，使其显示不同的部分 */
+}
+
+#menu a.nav3 {
+    background-position: left -224px;
+}
+
+#menu a.nav4 {
+    background-position: left -336px;
+}
+
+#menu a.nav5 {
+    background-position: left -448px;
+}
+
+#menu a.nav6 {
+    background-position: left -560px;
+}
+
+/* 鼠标悬停时改变图标和显示文字 */
+#menu li:hover a {
+    color: #fff; /* 设置鼠标悬停时链接文本颜色为白色 */
+    background: url(images/menu.png) left -56px no-repeat; /* 设置鼠标悬停时链接的背景图片位置 */
+    width: 165px; /* 设置鼠标悬停时链接的宽度为 165 像素 */
+    height: 56px; /* 设置鼠标悬停时链接的高度为 56 像素 */
+    text-indent: 2em; /* 设置鼠标悬停时链接文本的缩进为 2 个字符宽度，显示文字 */
+    line-height: 56px; /* 设置鼠标悬停时链接文本的行高为 56 像素，使文字垂直居中 */
+    overflow: visible; /* 设置鼠标悬停时链接的溢出内容可见 */
+    -webkit-transition: 0.25s; /* 设置鼠标悬停时链接的过渡效果，持续时间为 0.25 秒，适用于 WebKit 浏览器 */
+    -moz-transition: 0.25s; /* 设置鼠标悬停时链接的过渡效果，持续时间为 0.25 秒，适用于 Mozilla 浏览器 */
+    transition: 0.25s; /* 设置鼠标悬停时链接的过渡效果，持续时间为 0.25 秒，适用于所有浏览器 */
+}
+
+#menu li:hover a.nav2 {
+    background-position: left -168px; /* 设置鼠标悬停时 nav2 链接的背景图片位置，使其显示不同的部分 */
+}
+
+#menu li:hover a.nav3 {
+    background-position: left -280px;
+}
+
+#menu li:hover a.nav4 {
+    background-position: left -392px;
+}
+
+#menu li:hover a.nav5 {
+    background-position: left -504px;
+}
+
+#menu li:hover a.nav6 {
+    background-position: left -616px;
+}
+
+
+
+
+.xq-bg {
+    text-align: center; /* 设置文本居中对齐 */
+    font: 16px "Microsoft Yahei"; /* 设置字体为 16 像素的 "Microsoft Yahei" 字体 */
+    position: relative; /* 设置相对定位 */
+    line-height: 35px; /* 设置行高为 35 像素 */
+}
+
+
+.xq-bg2 {
+    background: url(images/bg_02.jpg) 50% top no-repeat; /* 设置背景图片，居中对齐，顶部对齐，不重复 */
+    height: 940px; /* 设置元素高度为 940 像素 */
+}
+
+.xq-bg3 {
+    background: url(images/bg_03.jpg) 50% no-repeat; /* 设置背景图片，居中对齐，不重复 */
+    height: 940px; /* 设置元素高度为 940 像素 */
+}
+
+.xq-bg4 {
+    background: url(images/bg_04.jpg) 50% no-repeat; /* 设置背景图片，居中对齐，不重复 */
+    height: 940px; /* 设置元素高度为 940 像素 */
+}
+
+.xq-bg5 {
+    background: url(images/bg_05.jpg) 50% no-repeat; /* 设置背景图片，居中对齐，不重复 */
+    height: 940px; /* 设置元素高度为 940 像素 */
+}
+
+.xq-bg6 {
+    background: url(images/bg_06.jpg) 50% no-repeat; /* 设置背景图片，居中对齐，不重复 */
+    height: 940px; /* 设置元素高度为 940 像素 */
+}
+
+.xq-bg7 {
+    background: url(images/bg_07.jpg) 50% no-repeat; /* 设置背景图片，居中对齐，不重复 */
+    height: 940px; /* 设置元素高度为 940 像素 */
+}
+
+.home {
+    position: absolute; /* 绝对定位，使元素相对于最近的已定位祖先元素定位 */
+    top: 0; /* 将元素顶部与其包含块的顶部对齐 */
+    left: 75%; /* 将元素左侧与其包含块的左侧对齐，偏移 75% */
+    margin-left: -100px; /* 设置元素左侧的外边距为 -100 像素，进一步调整位置 */
+    background: url(images/home.png) no-repeat; /* 设置背景图片，不重复 */
+    width: 108px; /* 设置元素的宽度为 108 像素 */
+    height: 78px; /* 设置元素的高度为 78 像素 */
+}
+
+.xq-bg1 .home {
+    -webkit-animation: fadeInLeft 1s 2s ease both; /* 设置 WebKit 浏览器的动画效果 */
+    -moz-animation: fadeInLeft 1s 2s ease both; /* 设置 Mozilla 浏览器的动画效果 */
+}
+
+.blank100 {
+    margin: 0 auto; /* 设置外边距为自动，水平居中 */
+    width: 100%; /* 设置宽度为 100% */
+    height: 100px; /* 设置高度为 100 像素 */
+    font-size: 1px; /* 设置字体大小为 1 像素（用于占位） */
+    clear: both; /* 清除浮动 */
+}
+
+.blank80 {
+    margin: 0 auto; /* 设置外边距为自动，水平居中 */
+    width: 100%; /* 设置宽度为 100% */
+    height: 80px; /* 设置高度为 80 像素 */
+    font-size: 1px; /* 设置字体大小为 1 像素（用于占位） */
+    clear: both; /* 清除浮动 */
+}
+
+.blank40 {
+    margin: 0 auto; /* 设置外边距为自动，水平居中 */
+    width: 100%; /* 设置宽度为 100% */
+    height: 40px; /* 设置高度为 40 像素 */
+    font-size: 1px; /* 设置字体大小为 1 像素（用于占位） */
+    clear: both; /* 清除浮动 */
+}
+
+
+
+/*2*/
+.box {
+    margin: auto; /* 设置外边距为自动，水平居中 */
+    width: 1200px; /* 设置宽度为 1200 像素 */
+    text-align: left; /* 设置文本左对齐 */
+}
+
+.blank40 {
+    margin: 0 auto; /* 设置外边距为自动，水平居中 */
+    width: 100%; /* 设置宽度为 100% */
+    height: 40px; /* 设置高度为 40 像素 */
+    font-size: 1px; /* 设置字体大小为 1 像素（用于占位） */
+    clear: both; /* 清除浮动 */
+}
+
+.gk {
+    background: url(images/gk.png) no-repeat; /* 设置背景图片，不重复 */
+    height: 378px; /* 设置高度为 378 像素 */
+    width: 791px; /* 设置宽度为 791 像素 */
+    position: absolute; /* 绝对定位 */
+}
+
+.gk p {
+    position: absolute; /* 绝对定位 */
+    top: 150px; /* 设置顶部位置为 150 像素 */
+    display: block; /* 设置为块级元素 */
+    left: 200px; /* 设置左侧位置为 200 像素 */
+    text-indent: 2em; /* 设置文本缩进为 2 个字符宽度 */
+    width: 560px; /* 设置宽度为 560 像素 */
+}
+
+.gk b {
+    position: absolute; /* 绝对定位 */
+    top: 305px; /* 设置顶部位置为 305 像素 */
+    left: 300px; /* 设置左侧位置为 300 像素 */
+}
+
+.xzqh {
+    background: url(images/xzqh.png) no-repeat; /* 设置背景图片，不重复 */
+    width: 814px; /* 设置宽度为 814 像素 */
+    height: 467px; /* 设置高度为 467 像素 */
+    position: absolute; /* 绝对定位 */
+    top: 380px; /* 设置顶部位置为 380 像素 */
+    left: 660px; /* 设置左侧位置为 660 像素 */
+}
+
+.xzqh .map {
+    position: absolute; /* 绝对定位 */
+    width: 472px; /* 设置宽度为 472 像素 */
+    height: 403px; /* 设置高度为 403 像素 */
+    top: 50px; /* 设置顶部位置为 50 像素 */
+    left: 20px; /* 设置左侧位置为 20 像素 */
+}
+
+.xzqh p {
+    position: absolute; /* 绝对定位 */
+    top: 90px; /* 设置顶部位置为 90 像素 */
+    display: block; /* 设置为块级元素 */
+    left: 500px; /* 设置左侧位置为 500 像素 */
+    width: 300px; /* 设置宽度为 300 像素 */
+    text-indent: 2em; /* 设置文本缩进为 2 个字符宽度 */
+}
+
+
+/*3*/
+.rk {
+    /* 样式占位符，当前没有定义任何样式 */
+}
+
+.rk ul {
+    /* 样式占位符，当前没有定义任何样式 */
+}
+
+.rk ul li {
+    float: left; /* 设置列表项浮动到左侧 */
+}
+
+.rk ul li li img {
+    /* 样式占位符，当前没有定义任何样式 */
+}
+
+.rk ul li:hover img {
+    -webkit-transition: -webkit-transform 0.7s ease-out; /* 设置 Safari 和 Chrome 浏览器的过渡效果 */
+    -moz-transition: -moz-transform 0.7s ease-out; /* 设置 Mozilla 浏览器的过渡效果 */
+    transition: transform 0.7s ease-out; /* 设置标准的过渡效果 */
+    transform: rotateY(360deg); /* 设置标准的 3D 旋转效果 */
+    -webkit-transform: rotateY(360deg); /* 设置 Safari 和 Chrome 浏览器的 3D 旋转效果 */
+    -moz-transform: rotateY(360deg); /* 设置 Mozilla 浏览器的 3D 旋转效果 */
+}
+
+
+
+
+/*4*/
+.ly-titel {
+    text-align: center; /* 设置文本居中对齐 */
+}
+
+.ly-content {
+    position: absolute; /* 设置绝对定位 */
+}
+
+.ly-content li {
+    position: absolute; /* 设置列表项的绝对定位 */
+}
+
+.ly-content li img {
+    cursor: pointer; /* 设置鼠标悬停在图片上时显示为指针 */
+    transition: all 0.6s; /* 设置所有属性的过渡效果，持续时间为 0.6 秒 */
+}
+
+.ly-content li:hover img {
+    transform: scale(1.07); /* 鼠标悬停时将图片放大 1.07 倍 */
+}
+
+.ly-content .pt1 {
+    top: 0; /* 设置顶部位置为 0 */
+    left: 50px; /* 设置左侧位置为 50 像素 */
+}
+
+.ly-content .pt2 {
+    top: 260px; /* 设置顶部位置为 260 像素 */
+    left: 160px; /* 设置左侧位置为 160 像素 */
+}
+
+.ly-content .pt3 {
+    top: 0; /* 设置顶部位置为 0 */
+    left: 380px; /* 设置左侧位置为 380 像素 */
+}
+
+.ly-content .pt4 {
+    top: 260px; /* 设置顶部位置为 260 像素 */
+    left: 590px; /* 设置左侧位置为 590 像素 */
+}
+
+.ly-content .pt5 {
+    top: 0; /* 设置顶部位置为 0 */
+    left: 770px; /* 设置左侧位置为 770 像素 */
+}
+/*5*/
+.tz-titel, .tz {
+    position: absolute; /* 设置绝对定位 */
+}
+
+.tz-titel {
+    top: 50px; /* 设置顶部位置为 50 像素 */
+    left: 50px; /* 设置左侧位置为 50 像素 */
+}
+
+.tz-titel-nav {
+    top: 400px; /* 设置顶部位置为 400 像素 */
+    position: absolute; /* 设置绝对定位 */
+}
+
+.tz-titel-nav li {
+    position: absolute; /* 设置列表项的绝对定位 */
+}
+
+.tz-titel-nav li img {
+    cursor: pointer; /* 设置鼠标悬停在图片上时显示为指针 */
+    transition: all 0.6s; /* 设置所有属性的过渡效果，持续时间为 0.6 秒 */
+}
+
+.boxx {
+    text-align: center; /* 设置文本居中对齐 */
+    width: 190px; /* 设置宽度为 190 像素 */
+    position: relative; /* 设置相对定位 */
+}
+
+.boxx:before {
+    content: ""; /* 插入一个空内容 */
+    width: 0; /* 初始宽度为 0 */
+    height: 100%; /* 设置高度为 100% */
+    background: #000; /* 设置背景颜色为黑色 */
+    position: absolute; /* 设置绝对定位 */
+    opacity: 0; /* 初始透明度为 0 */
+    transition: all 500ms cubic-bezier(0.47, 0, 0.47, 0.47) 0s; /* 设置过渡效果 */
+    height: 190px; /* 设置高度为 190 像素 */
+
+    /* 旋转 */
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+    /* 旋转原点 */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    margin: 78px 0 0 135px; /* 设置外边距 */
+}
+
+.boxx:hover:before {
+    width: 100%; /* 设置宽度为 100% */
+    left: 0; /* 设置左侧位置为 0 */
+    opacity: 0.5; /* 设置透明度为 0.5 */
+}
+
+.boxx img {
+    height: auto; /* 设置高度为自动 */
+}
+
+.boxx .boxx-content {
+    width: 100%; /* 设置宽度为 100% */
+    padding: 14px 18px; /* 设置内边距 */
+    color: #fff; /* 设置文字颜色为白色 */
+    position: absolute; /* 设置绝对定位 */
+    top: 38%; /* 设置顶部位置为 38% */
+    left: 0; /* 设置左侧位置为 0 */
+}
+
+.boxx .title {
+    padding-left: 40px; /* 设置左侧内边距为 40 像素 */
+    font-size: 25px; /* 设置字体大小为 25 像素 */
+    font-weight: 600; /* 设置字体加粗 */
+    line-height: 30px; /* 设置行高为 30 像素 */
+    text-transform: uppercase; /* 设置文本为大写 */
+    margin: 0; /* 去除外边距 */
+    opacity: 0; /* 初始透明度为 0 */
+    transition: all 0.5s ease 0s; /* 设置过渡效果 */
+}
+
+.boxx:hover .title {
+    opacity: 1; /* 设置透明度为 1 */
+    transition-delay: 0.7s; /* 设置过渡延迟为 0.7 秒 */
+}
+
+.boxx:hover .title a {
+    color: #FFF; /* 设置链接文字颜色为白色 */
+}
+
+@media only screen and (max-width: 990px) {
+    .boxx {
+        margin-bottom: 30px; /* 设置底部外边距为 30 像素 */
+    }
+}
+
+
+
+
+	
+.tz-titel-nav .pt1 {
+    top: 0; /* 设置顶部位置为 0 */
+    left: 0px; /* 设置左侧位置为 0 像素 */
+}
+
+.tz-titel-nav .pt2 {
+    top: 155px; /* 设置顶部位置为 155 像素 */
+    left: 160px; /* 设置左侧位置为 160 像素 */
+}
+
+.tz-titel-nav .pt3 {
+    top: 0; /* 设置顶部位置为 0 */
+    left: 320px; /* 设置左侧位置为 320 像素 */
+}
+
+.tz-list1 {
+    top: 40px; /* 设置顶部位置为 40 像素 */
+    left: 650px; /* 设置左侧位置为 650 像素 */
+    background: #d4e2e5; /* 设置背景颜色 */
+}
+
+.tz-list1 h2 {
+    color: #0e65b2; /* 设置标题颜色 */
+}
+
+.tz-list2 {
+    top: 430px; /* 设置顶部位置为 430 像素 */
+    left: 650px; /* 设置左侧位置为 650 像素 */
+    background: #bad9ba; /* 设置背景颜色 */
+}
+
+.tz-list2 h2 {
+    color: #3b7e6f; /* 设置标题颜色 */
+}
+
+.tz-list {
+    position: absolute; /* 设置绝对定位 */
+    width: 510px; /* 设置宽度为 510 像素 */
+    padding: 10px 50px; /* 设置内边距，上下为 10 像素，左右为 50 像素 */
+}
+
+.tz-list h2 {
+    font-size: 24px; /* 设置字体大小为 24 像素 */
+    line-height: 50px; /* 设置行高为 50 像素 */
+}
+
+.tz-list li {
+    line-height: 38px; /* 设置列表项的行高为 38 像素 */
+}
+
+.tz-list li span {
+    float: right; /* 设置浮动到右侧 */
+    display: block; /* 设置为块级元素 */
+}
+
+.tz-list h3 {
+    text-align: right; /* 设置文本右对齐 */
+    margin-top: 20px; /* 设置顶部外边距为 20 像素 */
+}
+
+.tz-list img:hover {
+    opacity: 0.5; /* 设置鼠标悬停时的透明度为 0.5 */
+}
+
+
+/*6*/
+/* 样式调整 */
+.c3tu {
+    width: 395px; /* 设置元素宽度为 395 像素 */
+    height: 500px; /* 设置元素高度为 500 像素 */
+    float: left; /* 设置元素浮动到左侧 */
+    margin-top: 255px; /* 设置顶部外边距为 255 像素 */
+}
+
+.c3tu1 {
+    float: left; /* 设置元素浮动到左侧 */
+    width: 395px; /* 设置元素宽度为 395 像素 */
+    height: 332px; /* 设置元素高度为 332 像素 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+    position: relative; /* 设置相对定位 */
+}
+
+.c3tu1 video {
+    width: 100%; /* 设置视频宽度为 100% */
+    height: 100%; /* 设置视频高度为 100% */
+    object-fit: cover; /* 保持视频比例并填充 */
+}
+
+.c3tu2 {
+    float: left; /* 设置元素浮动到左侧 */
+    width: 395px; /* 设置元素宽度为 395 像素 */
+    height: 167px; /* 设置元素高度为 167 像素 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+}
+
+.c3tu2 img {
+    cursor: pointer; /* 设置鼠标悬停在图片上时显示为指针 */
+    transition: all 0.6s; /* 设置所有属性的过渡效果，持续时间为 0.6 秒 */
+}
+
+.c3tu2 img:hover {
+    transform: scale(1.1); /* 鼠标悬停时将图片放大 1.1 倍 */
+}
+
+.c3tua {
+    width: 790px; /* 设置元素宽度为 790 像素 */
+    height: 500px; /* 设置元素高度为 500 像素 */
+    float: left; /* 设置元素浮动到左侧 */
+    margin-top: 255px; /* 设置顶部外边距为 255 像素 */
+}
+
+.c3tu3 {
+    float: left; /* 设置元素浮动到左侧 */
+    width: 198px; /* 设置元素宽度为 198 像素 */
+    height: 167px; /* 设置元素高度为 167 像素 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+}
+
+.c3tu3 img {
+    cursor: pointer; /* 设置鼠标悬停在图片上时显示为指针 */
+    transition: all 0.6s; /* 设置所有属性的过渡效果，持续时间为 0.6 秒 */
+}
+
+.c3tu3 img:hover {
+    transform: scale(1.1); /* 鼠标悬停时将图片放大 1.1 倍 */
+}
+
+.c3tu4 {
+    float: left; /* 设置元素浮动到左侧 */
+    width: 592px; /* 设置元素宽度为 592 像素 */
+    height: 167px; /* 设置元素高度为 167 像素 */
+    overflow: hidden; /* 隐藏超出容器的内容 */
+}
+
+
+
+/* 汝城简介样式 */
+.intro {
+    padding: 20px; /* 设置内边距为 20 像素 */
+    background-color: #fff; /* 设置背景颜色为白色 */
+    margin-top: 20px; /* 设置顶部外边距为 20 像素 */
+    text-align: center; /* 设置文本居中对齐 */
+}
+
+.intro h2 {
+    font-size: 24px; /* 设置字体大小为 24 像素 */
+    margin-bottom: 15px; /* 设置底部外边距为 15 像素 */
+}
+
+.intro p {
+    font-size: 16px; /* 设置字体大小为 16 像素 */
+    line-height: 1.6; /* 设置行高为 1.6 */
+}
+
+/* 联系我们样式 */
+#contact {
+    padding: 20px; /* 设置内边距为 20 像素 */
+    background-color: #fff; /* 设置背景颜色为白色 */
+    margin-top: 20px; /* 设置顶部外边距为 20 像素 */
+    text-align: center; /* 设置文本居中对齐 */
+}
+
+#contact h2 {
+    font-size: 24px; /* 设置字体大小为 24 像素 */
+    margin-bottom: 15px; /* 设置底部外边距为 15 像素 */
+}
+
+#contact p {
+    font-size: 16px; /* 设置字体大小为 16 像素 */
+    line-height: 1.6; /* 设置行高为 1.6 */
+}
+
+/* 底部样式 */
+footer {
+    background-color: #333; /* 设置背景颜色为深灰色 */
+    color: white; /* 设置文本颜色为白色 */
+    text-align: center; /* 设置文本居中对齐 */
+    padding: 20px; /* 设置内边距为 20 像素 */
+}
+
+footer p {
+    margin: 5px 0; /* 设置上下外边距为 5 像素，左右外边距为 0 */
+}
+
+/* 响应式样式 */
+@media screen and (max-width: 768px) {
+    .carousel img {
+        object-fit: contain; /* 小屏幕显示完整图片 */
+    }
+    .carousel .arrow {
+        font-size: 24px; /* 设置箭头的字体大小为 24 像素 */
+    }
+    header .search-bar {
+        margin-top: 10px; /* 设置顶部外边距为 10 像素 */
+        justify-content: flex-end; /* 设置子元素在主轴（水平）方向上靠右对齐 */
+    }
+
+    header nav {
+        text-align: center; /* 设置文本居中对齐 */
+        width: 100%; /* 设置宽度为 100% */
+    }
+
+    header nav ul {
+        flex-direction: column; /* 设置子元素垂直排列 */
+    }
+
+    header nav ul li {
+        margin: 10px 0; /* 设置上下外边距为 10 像素，左右外边距为 0 */
+    }
+
+    .carousel .arrow {
+        font-size: 24px; /* 设置箭头的字体大小为 24 像素 */
+    }
+
+    .intro h2, #contact h2 {
+        font-size: 20px; /* 设置字体大小为 20 像素 */
+    }
+
+    .intro p, #contact p {
+        font-size: 14px; /* 设置字体大小为 14 像素 */
+    }
+
+    /* 二级菜单在小屏幕下样式调整 */
+    header nav ul li ul {
+        position: static; /* 设置静态定位 */
+        display: block; /* 设置为块级元素 */
+        width: 100%; /* 设置宽度为 100% */
+    }
+
+    header nav ul li ul li {
+        border-top: 1px solid #eee; /* 设置顶部边框为 1 像素的浅灰色实线 */
+    }
+}
+
+/* 取消所有 li 元素前面的黑点 */
+li {
+    list-style-type: none; /* 去除列表项的默认样式（无项目符号） */
+}
+
+/* 蓝条样式 */
+.blue-bar {
+    background-color: #0074EA; /* 设置背景颜色为蓝色 */
+    height: 5px; /* 设置高度为 5 像素 */
+    width: 100%; /* 设置宽度为 100% */
+}
+
+
