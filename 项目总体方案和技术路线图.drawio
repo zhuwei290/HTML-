@@ -1,9 +1,165 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
   <diagram name="第 1 页" id="0LSgDiA9YcBaa31yK7FC">
-    <mxGraphModel>
+    <mxGraphModel dx="1013" dy="545" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="4CHov2y8_U-au1DxkpFY-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="287" width="227" x="565" y="167" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="285.5" width="227" x="100.5" y="168.5" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="287" width="228" x="332" y="167" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F3FF;" value="" vertex="1">
+          <mxGeometry height="60" width="777" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#FFF9E6;" value="" vertex="1">
+          <mxGeometry height="37.5" width="262.25" x="-52.37" y="361.87" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fillColor=#E6F3FF;" value="" vertex="1">
+          <mxGeometry height="40.25" width="409" x="612.38" y="286.63" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#E6F3FF;fillColor=#E6F3FF;" value="" vertex="1">
+          <mxGeometry height="60" width="227" x="102" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F3FF;" value="" vertex="1">
+          <mxGeometry height="60" width="228" x="332" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F3FF;" value="" vertex="1">
+          <mxGeometry height="60" width="227" x="565" y="102" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="109" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="342" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="59" width="210" x="570" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 20px; color: rgb(26, 84, 144);&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;黑体&quot;&gt;基于自适应混合检索的&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;RAG&lt;/font&gt;&lt;font face=&quot;黑体&quot;&gt;问答系统技术架构&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="670" x="106" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;rotation=90;fontColor=#E6F3FF;fillColor=#E6F3FF;" value="" vertex="1">
+          <mxGeometry height="37.5" width="145" x="6" y="155.5" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6F3FF;" value="" vertex="1">
+          <mxGeometry height="54" width="692.5" x="100.5" y="457" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="109" y="246.25" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="110" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="110" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="342" y="249" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="342" y="318.25" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="341" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="570" y="249" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="210" x="570" y="317" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="58" width="210" x="570" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF3311;" value="" vertex="1">
+          <mxGeometry height="105" width="778" x="60" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="246" x="71.5" y="552" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="263" x="322.5" y="552" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="241" x="590" y="552" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=0;textDirection=vertical-rl;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;提炼关键科学问题&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="140" width="38" x="59.5" y="109" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=0;textDirection=vertical-rl;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;关键技术及算法模型构建&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="258" width="34" x="61.75" y="249" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=0;textDirection=vertical-rl;" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;理论模型设计及系统优化方案优化&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="416" width="51" x="988" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;color: rgb(26, 84, 144); font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;如何构建异构多模态知识库并最大化向量表示效果进行数据放置？&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="38" width="229" x="102" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-39" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font color=&quot;#1a5490&quot; face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;如何设计自适应路由策略和可持续？&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="41" width="201.5" x="342.75" y="114.5" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font color=&quot;#1a5490&quot; face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;如何提升混合检索环境下的数据访问效率和可靠？&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="208" x="570" y="117" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-41" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;面向教育领域的异构多模态知识库构建与向量化策略研究&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="197" x="118" y="192" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;基于置信度阈值的自适应动态路由与任务分发机制研究&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="208" x="343" y="193" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;稀疏与稠密融合的混合检索及重排序优化策略研究&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="577" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-44" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;构建多模态数据源的协同表示与统一索引模型&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="196" x="118" y="261.25" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;建立基于&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;LLM&lt;/font&gt;&lt;font face=&quot;宋体&quot;&gt;置信度评估的可信任路由决策框架&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="350" y="261.25" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-46" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;构建自适应查询理解与意图识别的预处理模块&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="577" y="264" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;基于文档结构化解析与语义分块的预处理算法&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="118" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-48" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;设计基于博弈理论与决策树的智能路由决策算法&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="350" y="333.25" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;设计&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;BM25&lt;/font&gt;&lt;font face=&quot;宋体&quot;&gt;与向量检索融合的混合检索算法&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="577" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;构建基于&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Embedding&lt;/font&gt;&lt;font face=&quot;宋体&quot;&gt;模型与向量数据库的高效检索框架&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="124" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-51" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;构建多模型协作与负载均衡的任务分发策略&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="182" x="350" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-52" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;设计基于交叉编码器的重排序与结果优化策略&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="198" x="578" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-53" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(26, 84, 144); font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;宋体&quot; style=&quot;&quot;&gt;对垂直领域&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;&quot;&gt;RAG&lt;/font&gt;&lt;font face=&quot;宋体&quot; style=&quot;&quot;&gt;问答系统的知识库构建、路由决策及混合检索问题理论建模&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="620" x="139" y="471" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;基于&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;LangChain&lt;/font&gt;&lt;font face=&quot;宋体&quot;&gt;框架与&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot;&gt;Qwen&lt;/font&gt;&lt;font face=&quot;宋体&quot;&gt;大模型集成全链路原型系统&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="233" x="78" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;通过公开教育数据集对自适应路由策略和混合检索算法进行消融实验验证&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="243" x="334" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;依据实验结果辅助修正系统参数（如阈值和权重）&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="596" y="571" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;系统实现与验证&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="757" x="65" y="522" as="geometry" />
+        </mxCell>
+        <mxCell id="4CHov2y8_U-au1DxkpFY-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=0;textDirection=vertical-rl;" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;理论模型设计及系统优化方案优化&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="258" width="34" x="797" y="187" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
