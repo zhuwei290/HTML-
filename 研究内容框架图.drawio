@@ -35,7 +35,7 @@
           <mxGeometry height="30" width="150" x="520" y="180" as="geometry" />
         </mxCell>
         <mxCell id="bOjbuKXgk2cx2F0mNl-c-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;font color=&quot;#996600&quot; face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;自适应路由与混合检索&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#996600&quot; face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;算法的关键技术&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="160" x="300" y="180" as="geometry" />
+          <mxGeometry height="30" width="179" x="290" y="180" as="geometry" />
         </mxCell>
         <mxCell id="bOjbuKXgk2cx2F0mNl-c-3" edge="1" parent="1" source="qFp72oo-03eu8UlPCHGR-1" style="endArrow=classic;html=1;rounded=0;exitX=0.153;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qFp72oo-03eu8UlPCHGR-4" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
@@ -182,7 +182,7 @@
           <mxGeometry height="60" width="670" x="40" y="558.69" as="geometry" />
         </mxCell>
         <mxCell id="bOjbuKXgk2cx2F0mNl-c-54" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font face=&quot;宋体&quot; style=&quot;&quot;&gt;总结并归纳垂直领域&lt;/font&gt;&lt;font face=&quot;Times New Roman&quot; style=&quot;&quot;&gt;RAG&lt;/font&gt;&lt;font face=&quot;宋体&quot; style=&quot;&quot;&gt;问答系统的关键技术及优化方法，形成系统化的解决方案，&lt;/font&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;宋体&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;综合提升教育领域智能问答系统的准确率、响应效率和抗幻觉能力&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="630" x="70" y="573.69" as="geometry" />
+          <mxGeometry height="30" width="657" x="43" y="573.69" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
