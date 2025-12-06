@@ -94,9 +94,6 @@
         <mxCell id="4CHov2y8_U-au1DxkpFY-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=0;textDirection=vertical-rl;" value="&lt;font face=&quot;宋体&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;关键技术及算法模型构建&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="258" width="34" x="61.75" y="249" as="geometry" />
         </mxCell>
-        <mxCell id="4CHov2y8_U-au1DxkpFY-37" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=0;textDirection=vertical-rl;" value="&lt;font face=&quot;宋体&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;理论模型设计及系统优化方案优化&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" vertex="1">
-          <mxGeometry height="416" width="51" x="988" y="85" as="geometry" />
-        </mxCell>
         <mxCell id="4CHov2y8_U-au1DxkpFY-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font face=&quot;宋体&quot; style=&quot;color: rgb(26, 84, 144); font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;如何构建异构多模态知识库并最大化向量表示效果进行数据放置？&lt;/b&gt;&lt;/font&gt;" vertex="1">
           <mxGeometry height="38" width="229" x="102" y="113" as="geometry" />
         </mxCell>
